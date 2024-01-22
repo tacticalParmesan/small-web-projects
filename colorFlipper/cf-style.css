@@ -1,0 +1,66 @@
+:root {
+  font-family: "Consolas", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  --shadow: 0 2px 10px black;
+}
+
+ body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkslategray;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.header-text,
+a {
+  color: azure;
+  text-decoration: none;
+}
+
+.flipper-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.current-color-line {
+  font-size: 2.5rem;
+  background-color: darkslategray;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: azure;
+  min-width: 490px;
+  max-width: 550px;
+  box-shadow: var(--shadow);
+}
+
+button {
+  padding: 0.5rem 0.7rem;
+  background-color: darkslategray;
+  box-shadow: var(--shadow);
+  border-radius: 0.5rem;
+  border: 0px;
+  font-size: 1.4rem;
+  font-family:inherit;
+  font-weight: inherit;
+  color: azure;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.3);
+}
+
